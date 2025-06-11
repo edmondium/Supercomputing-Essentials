@@ -1,0 +1,71 @@
+ffmpeg version 6.0 Copyright (c) 2000-2023 the FFmpeg developers
+  built with gcc 12.3.0 (GCC)
+  configuration: --prefix=/cvmfs/sling.si/modules/el7/software/FFmpeg/6.0-GCCcore-12.3.0 --enable-pic --enable-shared --enable-gpl --enable-version3 --enable-nonfree --cc=gcc --cxx=g++ --enable-libx264 --enable-libx265 --enable-libmp3lame --enable-libfreetype --enable-fontconfig --enable-libfribidi --enable-sdl2
+  libavutil      58.  2.100 / 58.  2.100
+  libavcodec     60.  3.100 / 60.  3.100
+  libavformat    60.  3.100 / 60.  3.100
+  libavdevice    60.  1.100 / 60.  1.100
+  libavfilter     9.  3.100 /  9.  3.100
+  libswscale      7.  1.100 /  7.  1.100
+  libswresample   4. 10.100 /  4. 10.100
+  libpostproc    57.  1.100 / 57.  1.100
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'part-4.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf60.3.100
+  Duration: 00:00:07.21, start: 82.885000, bitrate: 611 kb/s
+  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 960x540 [SAR 1:1 DAR 16:9], 485 kb/s, 24 fps, 24 tbr, 12288 tbn (default)
+    Metadata:
+      handler_name    : VideoHandler
+      vendor_id       : [0][0][0][0]
+  Stream #0:1[0x2](eng): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 124 kb/s (default)
+    Metadata:
+      handler_name    : SoundHandler
+      vendor_id       : [0][0][0][0]
+Stream mapping:
+  Stream #0:0 -> #0:0 (h264 (native) -> h264 (libx264))
+  Stream #0:1 -> #0:1 (copy)
+Press [q] to stop, [?] for help
+[libx264 @ 0x2474480] using SAR=1/1
+[libx264 @ 0x2474480] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+[libx264 @ 0x2474480] profile High, level 3.0, 4:2:0, 8-bit
+[libx264 @ 0x2474480] 264 - core 164 - H.264/MPEG-4 AVC codec - Copyleft 2003-2022 - http://www.videolan.org/x264.html - options: cabac=1 ref=3 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=7 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=3 lookahead_threads=1 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=24 scenecut=40 intra_refresh=0 rc_lookahead=40 rc=crf mbtree=1 crf=23.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+Output #0, mp4, to 'out-part-4.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf60.3.100
+  Stream #0:0(und): Video: h264 (avc1 / 0x31637661), yuv420p(tv, progressive), 640x360 [SAR 1:1 DAR 16:9], q=2-31, 24 fps, 12288 tbn (default)
+    Metadata:
+      handler_name    : VideoHandler
+      vendor_id       : [0][0][0][0]
+      encoder         : Lavc60.3.100 libx264
+    Side data:
+      cpb: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+  Stream #0:1(eng): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 124 kb/s (default)
+    Metadata:
+      handler_name    : SoundHandler
+      vendor_id       : [0][0][0][0]
+frame=    0 fps=0.0 q=0.0 size=       0kB time=00:00:00.14 bitrate=   2.6kbits/s dup=2 drop=0 speed= 6.6x    frame=   19 fps=0.0 q=28.0 size=       0kB time=00:00:02.83 bitrate=   0.1kbits/s dup=2 drop=0 speed=5.32x    frame=   60 fps= 57 q=28.0 size=       0kB time=00:00:04.54 bitrate=   0.1kbits/s dup=2 drop=0 speed=4.32x    frame=  173 fps=114 q=-1.0 Lsize=     330kB time=00:00:07.18 bitrate= 376.2kbits/s dup=2 drop=0 speed=4.75x    
+video:214kB audio:110kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 1.926283%
+[libx264 @ 0x2474480] frame I:2     Avg QP:19.49  size: 37678
+[libx264 @ 0x2474480] frame P:49    Avg QP:15.95  size:  1862
+[libx264 @ 0x2474480] frame B:122   Avg QP:20.08  size:   427
+[libx264 @ 0x2474480] consecutive B-frames:  5.2%  1.2%  3.5% 90.2%
+[libx264 @ 0x2474480] mb I  I16..4:  6.9% 69.2% 23.9%
+[libx264 @ 0x2474480] mb P  I16..4:  1.4%  4.7%  0.9%  P16..4:  5.7%  2.0%  1.8%  0.0%  0.0%    skip:83.5%
+[libx264 @ 0x2474480] mb B  I16..4:  0.0%  0.3%  0.1%  B16..8:  3.4%  1.4%  0.7%  direct: 0.4%  skip:93.7%  L0:41.2% L1:47.9% BI:11.0%
+[libx264 @ 0x2474480] 8x8 transform intra:68.2% inter:56.8%
+[libx264 @ 0x2474480] coded y,uvDC,uvAC intra: 68.8% 79.9% 47.6% inter: 2.3% 2.3% 0.2%
+[libx264 @ 0x2474480] i16 v,h,dc,p: 10% 44%  3% 43%
+[libx264 @ 0x2474480] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 15% 33% 11%  5%  7%  6%  9%  6%  9%
+[libx264 @ 0x2474480] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 14% 24% 11%  6%  9%  7% 12%  6% 10%
+[libx264 @ 0x2474480] i8c dc,h,v,p: 44% 33% 14% 10%
+[libx264 @ 0x2474480] Weighted P-Frames: Y:2.0% UV:2.0%
+[libx264 @ 0x2474480] ref P L0: 70.6% 10.5% 11.9%  7.0%
+[libx264 @ 0x2474480] ref B L0: 89.5%  7.5%  3.0%
+[libx264 @ 0x2474480] ref B L1: 95.1%  4.9%
+[libx264 @ 0x2474480] kb/s:242.70
